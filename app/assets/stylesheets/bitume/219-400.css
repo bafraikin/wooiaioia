@@ -16,7 +16,7 @@ body {
 
 html {
     overflow: hidden;
-    background: #333 url(bg.png) no-repeat right bottom;
+    background: #333 url(bg.svg) no-repeat right bottom;
     background-attachment: fixed;
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
