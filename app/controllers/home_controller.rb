@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  def index_woh
-    @art = Journal.find_by(name: "woo").articles 
+  def index
+    @hebdo = Journal.all
   end
 end

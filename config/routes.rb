@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
-  get 'journal/woo_index'
-  root to: 'home#index_woh'
-  get '/woo/:name', to: 'journal#woo_arti', as: 'woo_art' 
+
+  root to: "home#index" 
+
+  get '/:name', to: 'journal#index'
+
+  namespace :bitume do
+    get '/:id' => '/journal#arti', as: 'art'
+  end
+
+  namespace :wooiaioia do
+  get '/:id' => '/journal#arti', as: 'art'
+end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
