@@ -43,7 +43,7 @@
             width: 460px;
             height: 355px;
             background: url(layer.svg) no-repeat left center;
-            -moz-background-size: auto 100%;
+            background-size: auto 100%;
             -o-background-size: auto 100%;
             -webkit-background-size: auto 100%;
             background-size: auto 100%;

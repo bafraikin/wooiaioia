@@ -11,7 +11,7 @@ body {
     background: url(bg1.svg) no-repeat left top, url(bg2.svg) no-repeat right top;
     background-color: transparent;
     background-attachment: fixed;
-    -moz-background-size: 20% auto, 20% auto;
+    background-size: 20% auto, 20% auto;
     -o-background-size: 20% auto, 20% auto;
     -webkit-background-size: 20% auto, 20% auto;
     background-size: 20% auto, 20% auto;
@@ -96,7 +96,7 @@ header {
     width: 450px;
     background: url(layer-middle.svg) repeat-y center top;
     background-color: transparent;
-    -moz-background-size: 450px auto;
+    background-size: 450px auto;
     -o-background-size: 450px auto;
     -webkit-background-size: 450px auto;
     background-size: 450px auto;
@@ -125,7 +125,7 @@ header {
         top: -600px;
         height: 600px;
         background: url(hook3.svg) no-repeat center bottom, url(layer-frame.svg) no-repeat center 559px;
-        -moz-background-size: 360px auto, 450px auto;
+        background-size: 360px auto, 450px auto;
         -o-background-size: 360px auto, 450px auto;
         -webkit-background-size: 360px auto, 450px auto;
         background-size: 360px auto, 450px auto;
@@ -135,7 +135,7 @@ header {
         bottom: -41px;
         height: 41px;
         background: transparent url(layer-frame.svg) no-repeat center bottom;
-        -moz-background-size: 450px auto;
+        background-size: 450px auto;
         -o-background-size: 450px auto;
         -webkit-background-size: 450px auto;
         background-size: 450px auto;
@@ -187,7 +187,7 @@ h2 {
     padding: 0;
     width: 495px;
     background: url(layer-middle.svg) repeat-y center top;
-    -moz-background-size: 495px auto;
+    background-size: 495px auto;
     -o-background-size: 495px auto;
     -webkit-background-size: 495px auto;
     background-size: 495px auto;
@@ -213,7 +213,7 @@ h2 {
         top: -700px;
         height: 700px;
         background: url(hook1.svg) no-repeat center -40px, url(layer-frame.svg) no-repeat center 655px;
-        -moz-background-size: auto auto, 495px auto;
+        background-size: auto auto, 495px auto;
         -o-background-size: auto auto, 495px auto;
         -webkit-background-size: auto auto, 495px auto;
         background-size: auto auto, 495px auto;
@@ -223,7 +223,7 @@ h2 {
         bottom: -45px;
         height: 45px;
         background: transparent url(layer-frame.svg) no-repeat center bottom;
-        -moz-background-size: 495px auto;
+        background-size: 495px auto;
         -o-background-size: 495px auto;
         -webkit-background-size: 495px auto;
         background-size: 495px auto;
@@ -250,7 +250,7 @@ h2 {
     width: 450px;
     background: url(layer-middle.svg) repeat-y center top;
     background-color: transparent;
-    -moz-background-size: 450px auto;
+    background-size: 450px auto;
     -o-background-size: 450px auto;
     -webkit-background-size: 450px auto;
     background-size: 450px auto;
@@ -276,7 +276,7 @@ h2 {
         top: -700px;
         height: 700px;
         background: url(hook2.svg) no-repeat center -34px, url(layer-frame.svg) no-repeat center 659px;
-        -moz-background-size: auto auto, 450px auto;
+        background-size: auto auto, 450px auto;
         -o-background-size: auto auto, 450px auto;
         -webkit-background-size: auto auto, 450px auto;
         background-size: auto auto, 450px auto;
@@ -286,7 +286,7 @@ h2 {
         bottom: -41px;
         height: 41px;
         background: transparent url(layer-frame.svg) no-repeat center bottom;
-        -moz-background-size: 450px auto;
+        background-size: 450px auto;
         -o-background-size: 450px auto;
         -webkit-background-size: 450px auto;
         background-size: 450px auto;
@@ -334,7 +334,7 @@ h2 {
         width: 460px;
         height: 355px;
         background: url(layer.svg) no-repeat left center;
-        -moz-background-size: auto 100%;
+        background-size: auto 100%;
         -o-background-size: auto 100%;
         -webkit-background-size: auto 100%;
         background-size: auto 100%;
@@ -415,7 +415,7 @@ footer {
     height: 75px;
     border: none;
     background: transparent url(footer.svg) no-repeat 0 0;
-    -moz-background-size: auto 375px;
+    background-size: auto 375px;
     -o-background-size: auto 375px;
     -webkit-background-size: auto 375px;
     background-size: auto 375px;
@@ -533,7 +533,7 @@ footer a::after {
         width: 100%;
         height: 700px;
         background: transparent url(hook3.svg) no-repeat center bottom;
-        -moz-background-size: auto 100%;
+        background-size: auto 100%;
         -o-background-size: auto 100%;
         -webkit-background-size: auto 100%;
         background-size: auto 100%;
@@ -545,7 +545,7 @@ footer a::after {
     width: 615px;
     height: 450px;
     background: url(layer.svg) no-repeat left center;
-    -moz-background-size: auto 100%;
+    background-size: auto 100%;
     -o-background-size: auto 100%;
     -webkit-background-size: auto 100%;
     background-size: auto 100%;

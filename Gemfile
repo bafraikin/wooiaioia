@@ -23,6 +23,8 @@ gem 'jbuilder'
 gem 'mail'
 gem 'json'
 gem 'annotate'
+gem 'coffee-rails'
+gem 'typekit-rails'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
