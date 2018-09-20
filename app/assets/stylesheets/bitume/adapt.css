@@ -1,0 +1,24 @@
+
+.hook {
+  display: block;
+  content: "";
+  height: 350px;
+  width: 500px;
+  padding: 0 30% 0 80px;
+  background-image: url(hook2.svg), url(hook2.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, bottom right;
+
+}
+.article::before {
+  display: block;
+  margin: 10px;
+  content: "";
+}
+.article {
+  padding-top: 50px;
+  background: url(layer.svg) center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}

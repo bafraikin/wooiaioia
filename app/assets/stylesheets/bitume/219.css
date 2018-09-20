@@ -1,7 +1,6 @@
 /* css Zen Garden submission 219 - 'Steel', by Steffen Knoeller, http://www.steffen-knoeller.de/  */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
-/* TYPEKIT_KIT_ID: fzq7emy */
 
 /**
 *    CSS Zen Garden submission:
@@ -47,12 +46,6 @@
 *    ---------------------------- 759 KB (0.74 MB)
 */
 
-@import url("219-keyframes.css");
 @import url("219-base.css");
-@import url("219-400.css") all and (min-width: 400px);
-@import url("219-800.css") all and (min-width: 800px) and (max-width: 1366px);
-@import url("219-1367.css") all and (min-width: 1367px);
-@import url("219-1600.css") all and (min-width: 1600px);
-@import url("219-fix1.css") all and (min-width: 1367px);
-@import url("219-fix2.css") all and (min-width: 1367px);
-@import url("219-bg.css") all and (min-width: 400px);
+@import url("219-400.css");
+@import url("219-800.css");

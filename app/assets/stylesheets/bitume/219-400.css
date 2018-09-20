@@ -93,7 +93,7 @@ body {
         top: -600px;
         height: 600px;
         background: url(hook3.svg) no-repeat center bottom, url(layer-frame.svg) no-repeat center 567px;
-        background-size: 300px auto, 360px auto;
+        background-size: 300px 20px, 360px auto;
         -o-background-size: 300px auto, 360px auto;
         -webkit-background-size: 300px auto, 360px auto;
         background-size: 300px auto, 360px auto;
