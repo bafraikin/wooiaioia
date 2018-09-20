@@ -46,6 +46,7 @@
 *    ---------------------------- 759 KB (0.74 MB)
 */
 
-@import url("219-base.css");
-@import url("219-400.css");
-@import url("219-800.css");
+@import url('219-base.css');
+@import url('219-400.css');
+@import url('adapt.css');
+@import url('219-800.css');
