@@ -1,0 +1,23 @@
+
+
+<%= stylesheet_link_tag "bitume" %>
+
+<div class="container">
+
+  <div class="page-wrapper">
+    <header>
+      <h1>BITUME</h1>
+      <h2>QUE DU LOURD</h2>
+    </header>
+  </div>
+</div>
+<div class="hook">
+</div>
+<% @art.each do |article| %>
+  <div class="article">
+    <h2> <%= link_to "#{article.name}", bitume_art_path(article) %> </h2>
+    <p> <%= article.body[0, 40] + "..." %> </p>
+    <br>
+    <p class="date"> Paru le: <%= article.created_at.strftime('%d/%m/%Y') %></p>
+  </div>
+<% end %>
