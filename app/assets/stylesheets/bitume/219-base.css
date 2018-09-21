@@ -34,10 +34,6 @@ ul, li {
     list-style: none;
 }
 
-html {
-    background: #000;
-}
-
 body {
     overflow: auto;
     padding: 0 0 25px 0;
