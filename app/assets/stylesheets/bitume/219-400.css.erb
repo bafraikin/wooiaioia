@@ -16,7 +16,7 @@ body {
 
 html {
     overflow: hidden;
-    background: #333 url( <%= asset_path 'bg' %>) no-repeat right bottom;
+    background: #333 url( <%= image_path 'bg' %>) no-repeat right bottom;
     background-attachment: fixed;
     background-size: 100% auto;
     -o-background-size: 100% auto;
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    background: url(<%= asset_path 'bg1' %>) no-repeat left top, url(<%= asset_path 'bg2' %>) no-repeat right top;
+    background: url(<%= image_path 'bg1' %>) no-repeat left top, url(<%= image_path 'bg2' %>) no-repeat right top;
     background-color: transparent;
     background-attachment: fixed, fixed;
     background-size: auto 100%, auto 100%;
@@ -36,7 +36,7 @@ body {
 
 @media all and (min-height: 800px) {
     body {
-        background: transparent url(<%= asset_path 'bg2' %>) no-repeat right top;
+        background: transparent url(<%= image_path 'bg2' %>) no-repeat right top;
         background-attachment: fixed;
         background-size: auto 75%;
         -o-background-size: auto 75%;
@@ -56,7 +56,7 @@ body {
 
 @media all and (max-device-width: 600px) {
     body {
-        background: transparent url(<%= asset_path 'bg2' %>) no-repeat right -1px;
+        background: transparent url(<%= image_path 'bg2' %>) no-repeat right -1px;
         background-attachment: fixed;
         background-size: auto 75%;
         -o-background-size: auto 75%;
@@ -70,7 +70,7 @@ body {
     margin: 120px auto 200px auto;
     padding: 0 50px 20px 50px;
     width: 260px;
-    background: url(<%= asset_path 'layer-middle' %>) repeat-y center top;
+    background: url(<%= image_path 'layer-middle' %>) repeat-y center top;
     background-size: 360px auto;
     -o-background-size: 360px auto;
     -webkit-background-size: 360px auto;
@@ -92,7 +92,7 @@ body {
     .page-wrapper::before {
         top: -600px;
         height: 600px;
-        background: url(<%= asset_path 'hook3' %>) no-repeat center bottom, url(<%= asset_path 'layer-frame' %>) no-repeat center 567px;
+        background: url(<%= image_path 'hook3' %>) no-repeat center bottom, url(<%= image_path 'layer-frame' %>) no-repeat center 567px;
         background-size: 300px 20px, 360px auto;
         -o-background-size: 300px auto, 360px auto;
         -webkit-background-size: 300px auto, 360px auto;
@@ -102,7 +102,7 @@ body {
     .page-wrapper::after {
         bottom: -33px;
         height: 33px;
-        background: transparent url(<%= asset_path 'layer-frame' %>) no-repeat center bottom;
+        background: transparent url(<%= image_path 'layer-frame' %>) no-repeat center bottom;
         background-size: 360px auto;
         -o-background-size: 360px auto;
         -webkit-background-size: 360px auto;
