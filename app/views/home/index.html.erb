@@ -19,7 +19,7 @@
   <ul>
     <% @hebdo.each do | part | %>
       <li>
-        <%= link_to "#{part.name}", "/#{part.name}" %>
+        <%= link_to "#{part.name}", "/journal/#{part.name}" %>
       </li>
     <%  end %>
   </ul>

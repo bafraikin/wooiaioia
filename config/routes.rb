@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root to: "home#index" 
 
-  get '/:name', to: 'journal#index'
+  get '/journal/:name', to: 'journal#index'
 
   namespace :bitume do
     get '/:id' => '/journal#arti', as: 'art'
