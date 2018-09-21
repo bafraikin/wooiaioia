@@ -75,6 +75,9 @@ footer::before {
   height: 600px;
   background: url(<%= image_path 'hook3' %>) no-repeat center bottom, url(<%= image_path 'layer-frame' %>) no-repeat center 567px;
   background-size: 300px auto, 360px auto;
+  -o-background-size: 300px auto, 360px auto;
+  -webkit-background-size: 300px auto, 360px auto;
+  background-size: 300px auto, 360px auto;
 }
 
 header::after,
@@ -91,6 +94,9 @@ footer::after {
   bottom: -33px;
   height: 33px;
   background: transparent url(<%= image_path 'layer-frame' %>) no-repeat center bottom;
+  background-size: 360px auto;
+  -o-background-size: 360px auto;
+  -webkit-background-size: 360px auto;
   background-size: 360px auto;
 }
 
@@ -116,6 +122,9 @@ footer {
   padding: 0 50px 15px 50px;
   width: 260px;
   background: url(<%= image_path 'layer-middle' %>) repeat-y center top;
+  background-size: 360px auto;
+  -o-background-size: 360px auto;
+  -webkit-background-size: 360px auto;
   background-size: 360px auto;
 }
 
