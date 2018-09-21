@@ -6,21 +6,15 @@
 
 @media all and (min-height: 800px) {
   body {
-    background: url( <%= asset_path 'bg1' %>) no-repeat left top, url(<%= asset_path 'bg2' %>) no-repeat right top;
+    background: url( <%= image_path 'bg1' %>) no-repeat left top, url(<%= image_path 'bg2' %>) no-repeat right top;
     background-color: transparent;
     background-attachment: fixed;
-    background-size: auto 100%, auto 75%;
-    -o-background-size: auto 100%, auto 75%;
-    -webkit-background-size: auto 100%, auto 75%;
     background-size: auto 100%, auto 75%;
   }
 }
 
 @media all and (min-height: 1366px) {
   body {
-    background-size: auto 100%, auto 50%;
-    -o-background-size: auto 100%, auto 50%;
-    -webkit-background-size: auto 100%, auto 50%;
     background-size: auto 100%, auto 50%;
   }
 }
@@ -79,10 +73,7 @@ header::before,
 footer::before {
   top: -600px;
   height: 600px;
-  background: url(<%= asset_path 'hook3' %>) no-repeat center bottom, url(<%= asset_path 'layer-frame' %>) no-repeat center 567px;
-  background-size: 300px auto, 360px auto;
-  -o-background-size: 300px auto, 360px auto;
-  -webkit-background-size: 300px auto, 360px auto;
+  background: url(<%= image_path 'hook3' %>) no-repeat center bottom, url(<%= image_path 'layer-frame' %>) no-repeat center 567px;
   background-size: 300px auto, 360px auto;
 }
 
@@ -99,10 +90,7 @@ header::after,
 footer::after {
   bottom: -33px;
   height: 33px;
-  background: transparent url(<%= asset_path 'layer-frame' %>) no-repeat center bottom;
-  background-size: 360px auto;
-  -o-background-size: 360px auto;
-  -webkit-background-size: 360px auto;
+  background: transparent url(<%= image_path 'layer-frame' %>) no-repeat center bottom;
   background-size: 360px auto;
 }
 
@@ -127,10 +115,7 @@ footer {
   margin: 45px 10px;
   padding: 0 50px 15px 50px;
   width: 260px;
-  background: url(<%= asset_path 'layer-middle' %>) repeat-y center top;
-  background-size: 360px auto;
-  -o-background-size: 360px auto;
-  -webkit-background-size: 360px auto;
+  background: url(<%= image_path 'layer-middle' %>) repeat-y center top;
   background-size: 360px auto;
 }
 
