@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :signed_in?
 
   # GET /articles
   # GET /articles.json
@@ -71,5 +72,13 @@ class ArticlesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
       params.require(:article).permit(:name, :description, :body, :journal_id)
+    end
+    private
+    def signed_in?
+      unless admin_signed_in?
+        redirect_to root_path
+      else
+        puts "admin is connected"
+      end
     end
 end
