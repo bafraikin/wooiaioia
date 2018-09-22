@@ -22,3 +22,11 @@
     <%  end %>
   </ul>
 </div>
+
+<% if admin_signed_in? %>
+
+
+  <h1>Tu es connecté</h1>
+        <%= link_to "new article",  new_article_path %>
+
+  <% end %>
