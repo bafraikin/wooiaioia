@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   root to: "home#index"
   get '/journal/:name', to: 'journal#index'
-  resources :articles, only: [:show, :edit, :new, :update, :destroy, :create]
+  resources :articles
 
   namespace :bitume do
     get '/:id' => '/journal#arti', as: 'art'
