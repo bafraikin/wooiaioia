@@ -4,11 +4,90 @@
   content: "";
   height: 350px;
   width: 500px;
-  padding: 0 30% 0 80px;
+  padding: 0 30% 0 0;
   background-image: url( <%= image_path 'hook2' %> ), url( <%= image_path 'hook2' %>);
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, bottom right;
 }
+
+.div_title::before {
+  display: block;
+  content: "";
+  margin-left: 25%;
+  height: 300px;
+  margin-right: 25%;
+  background-image: url( <%= image_path 'hook2' %> ), url( <%= image_path 'hook2' %>);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, bottom left;
+}
+
+h2.bit_titl::before {
+  display: block;
+  content: "";
+  background-image: url(<%= image_path 'layer' %>);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+
+  background-size: 100%;
+  background-position: top center;
+  position: relative;
+  height: 60px;
+  bottom: 47%;
+}
+
+h2.bit_titl {
+  content: "";
+  line-height: 0;
+  text-transform: uppercase;
+  margin-left: 20%;
+  height: 98px;
+  padding: 0;
+  margin-top: 30px;
+  margin-right: 20%;
+  background-image: url(<%= image_path 'layer' %>);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bit_descr {
+  padding-top: 88px;
+  padding-bottom: 50px;
+  font: 26px/28px "museo-sans", sans-serif;
+}
+
+.bit_body::before {
+  margin-right: 20px;
+}
+
+.bit_body::first-line {
+  font: 26px/29px "museo-sans", sans-serif;
+}
+
+.bit_body {
+  font: 21px/22px "museo-sans", sans-serif;
+  margin-right: 25%;
+  margin-left: 5%;
+  padding-top: 10px;
+  text-align: left;
+}
+
+h2.bit_titl::after {
+  display: block;
+  content: "";
+  background-image: url(<%= image_path 'layer' %>);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom center;
+  width: 100%;
+  height: 60px;
+  background-size: 100%;
+  top: 29%;
+  position: relative;
+}
+
+
 
 div.article::before {
   display: block;
