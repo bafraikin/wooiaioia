@@ -1,2 +1,8 @@
 
-<p><%= @article.body %></p>
+
+
+<%= simple_format(@article.name, {class: "bit_titl"}, sanitize: false) %>
+<%= simple_format(@article.description, {class: "bit_descr"}, sanitize: false) %>
+<%= simple_format(@article.body, {class: "bit_body"}, sanitize: false) %>
+<%= link_to "supprimer", article_path(article), method: :delete %>
+<%= link_to "editer", edit_article_path(article)%>

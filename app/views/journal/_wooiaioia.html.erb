@@ -1,3 +1,9 @@
 <p>wooiaioia</p>
 
-<%= link_to "test", "/wooiaioia/1" %>
+<% @art.each do |article| %>
+  <%= link_to article.name, wooiaioia_art_path(article) %>
+  <% if admin_signed_in?  %>
+  <%= link_to "editer", edit_article_path(article) %>
+<%= link_to "supprimer", article_path(article), method: :delete %>
+  <% end %>
+  <% end %>

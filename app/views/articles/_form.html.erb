@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_field :description %>
+    <%= form.text_area :description %>
   </div>
 
   <div class="field">
@@ -27,8 +27,8 @@
   </div>
 
   <div class="field">
-    <%= select_tag(:journal_id) %>
-    <%= options_for_select([['wooiaioia', 1], ['bitume', 2], ['lautre', 3]]) %>
+    <%= form.label :journal_id %>
+    <%= form.select(:journal_id , options_for_select([['wooiaioia', 1], ['bitume', 2], ['lautre', 3]])) %>
   </div>
 
   <div class="actions">
