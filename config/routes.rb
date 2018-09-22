@@ -1,15 +1,20 @@
 Rails.application.routes.draw do
 
-  root to: "home#index" 
 
+  devise_for :admins, controllers: {
+    sessions: 'admins/sessions'
+  }
+
+  root to: "home#index"
   get '/journal/:name', to: 'journal#index'
+  resources :articles, only: [:show, :edit, :new, :update, :destroy, :create]
 
   namespace :bitume do
     get '/:id' => '/journal#arti', as: 'art'
   end
 
   namespace :wooiaioia do
-  get '/:id' => '/journal#arti', as: 'art'
-end
+    get '/:id' => '/journal#arti', as: 'art'
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
