@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :journal_id %>
-    <%= form.select(:journal_id , options_for_select([['wooiaioia', 1], ['bitume', 2], ['lautre', 3]])) %>
+    <%= form.select(:journal_id , options_for_select(@journal_array)) %>
   </div>
 
   <div class="actions">

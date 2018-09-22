@@ -16,6 +16,7 @@ class ArticlesController < ApplicationController
   # GET /articles/new
   def new
     @article = Article.new
+    @journal_array = Journal.all.map {|c| [c.name, c.id]}
   end
 
   # GET /articles/1/edit
