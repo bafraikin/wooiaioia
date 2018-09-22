@@ -16,9 +16,11 @@
 <% @art.each do |article| %>
   <div class="article">
     <h2> <%= link_to "#{article.name}", bitume_art_path(article) %> </h2>
-    <p> <%= article.body[0, 40] + "..." %> </p>
-<%= link_to "supprimer", article_path(article), method: :delete %>
-<%= link_to "editer", edit_article_path(article)%>
+    <p> <%= article.description[0, 80] + "..." %> </p>
+    <% if admin_signed_in? %>
+      <%= link_to "supprimer", article_path(article), method: :delete %> |
+      <%= link_to "editer", edit_article_path(article)%>
+    <% end %>
     <br>
     <p class="date"> Paru le: <%= article.created_at.strftime('%d/%m/%Y') %></p>
   </div>
