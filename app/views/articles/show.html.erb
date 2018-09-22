@@ -7,12 +7,12 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @article.description %>
+  <%= simple_format(@article.description, {}, sanitize: false) %>
 </p>
 
 <p>
   <strong>Body:</strong>
-  <%= @article.body %>
+  <%= simple_format(@article.body, {}, sanitize: false) %>
 </p>
 
 <p>
