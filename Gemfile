@@ -25,6 +25,7 @@ gem 'json'
 gem 'annotate'
 gem 'coffee-rails'
 gem 'typekit-rails'
+gem 'brakeman'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
