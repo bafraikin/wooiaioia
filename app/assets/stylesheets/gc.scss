@@ -9,23 +9,68 @@ div.logo_bc{
 }
 
 i.fa-concierge-bell {
-  animation-duration: 1.5s;
-   animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
   animation-direction: alternate; 
   animation-name: slideout;
 }
 
 @keyframes slideout{
-  from {
+  0% {
     left: 56px;
     top: 56px;
     transform: rotate(0deg);
   }
-  to {
+  25% {
     left: 96px;
     top: 10px;
     transform: rotate(45deg);
-  } 
+  }
+  100% {
+    left: 96px;
+    top: 10px;
+    transform: rotate(45deg); 
+  }
+}
+
+i.fa-lemon {
+  color: #e8e830;
+  transform: rotate(20deg);
+  position: relative;
+  right: -6px;
+  z-index: -2;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-name: lemon_appear;
+}
+
+@keyframes lemon_appear {
+  0% {
+    right: -6px;
+    transform: rotate(20deg);
+  }
+  10% {
+    right: -6px;
+    top: 0px;
+    transform: rotate(20deg);
+  }
+  20% {
+    top: -21px;
+  }
+  35% {
+    right: 25px;
+    top: -21px;
+  }
+  50% {
+    transform: rotate(560deg);
+    right: 35px;
+    top: -21px;
+  }
+  100% {
+    transform: rotate(560deg);
+    right: 35px; 
+    top: -21px;
+  }
 }
 
 i.fa-concierge-bell {
@@ -43,10 +88,9 @@ i.fa-frog {
 }
 
 i.fa-crown {
-
   position: relative;
   color: rgb(218,165,32);
-  bottom: 43px;
-  right: 45px;
+  bottom: 65px;
+  right: -22px;
   transform: rotate(325deg);
 }
