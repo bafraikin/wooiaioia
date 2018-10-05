@@ -1,4 +1,9 @@
-  @media screen and (max-width: 820px), screen and (width: 820px), screen and (display-mode: browser) and (max-width: 820px) {
+@media screen and (max-width: 820px), screen and (width: 820px), screen and (display-mode: browser) and (max-width: 820px) {
+    body {
+  margin: 0;
+  overflow: hidden!important;
+  position: fixed!important;
+    }
   div.navbar {
     height: 35px!important;
   }
@@ -69,7 +74,6 @@ div.logo_bc{
   left: 20px;
 
 }
-
 
 i.fa-concierge-bell {
   animation-duration: 6s;
