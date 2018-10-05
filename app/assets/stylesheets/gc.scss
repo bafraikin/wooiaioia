@@ -33,8 +33,8 @@ i.fa-concierge-bell {
   }
 }
 
-i.fa-lemon {
-  color: #e8e830;
+i.fa-apple-alt {
+  color: #ff1a1a;
   transform: rotate(20deg);
   position: relative;
   right: -6px;
@@ -47,29 +47,31 @@ i.fa-lemon {
 @keyframes lemon_appear {
   0% {
     right: -6px;
-    transform: rotate(20deg);
+    transform: rotate(0deg);
   }
   10% {
     right: -6px;
     top: 0px;
-    transform: rotate(20deg);
+    transform: rotate(0deg);
   }
   20% {
-    top: -21px;
+    top: -19px;
   }
   35% {
     right: 25px;
-    top: -21px;
+    top: -19px;
   }
   50% {
     transform: rotate(560deg);
     right: 35px;
-    top: -21px;
+    top: -19px;
+    font-size: 85%;
   }
   100% {
     transform: rotate(560deg);
     right: 35px; 
-    top: -21px;
+    top: -19px;
+    font-size: 85%;
   }
 }
 
