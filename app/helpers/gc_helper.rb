@@ -1,0 +1,2 @@
+module GcHelper
+end
