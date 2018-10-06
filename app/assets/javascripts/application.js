@@ -15,4 +15,10 @@
 //= require turbolinks
 //= require typekit
 //= require jquery
+//= require aos
 //= require_tree .
+
+  $ (function  () {
+  
+  AOS.init ();
+  });

@@ -14,30 +14,44 @@
 
 <%= video_tag "ink.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" ,id: "video", poster: "ink.jpg" %>
 
+<div class="blank">
 
-  <script>
-    $('#video').attr('playsinline',''); 
+</div>
+<% 10.times do |index| %>
+  <% if index.even?%>
+    <div class="carrot" data-aos= "fade-up-left" data-aos-duration="3000">
+      <%= image_tag "carrot.png", class: "carrot_right" %> 
+    </div>
+  <% else %>
+    <div class="carrot" data-aos= "fade-up-right" data-aos-duration="3000">
+      <%= image_tag "carrot.png", class: "carrot_left" %> 
+    </div>
+  <% end %>
+<% end %>
 
-  ;(function () {
-    var each = Array.prototype.forEach
-    var autoplayIds = []
 
-    document.addEventListener('turbolinks:before-cache', function () {
-      var autoplayElements = document.querySelectorAll('[autoplay]')
-      each.call(autoplayElements, function (element) {
-        if (!element.id) throw 'autoplay elements need an ID attribute'
-        autoplayIds.push(element.id)
-        element.removeAttribute('autoplay')
-      })
+<script>
+  $('#video').attr('playsinline',''); 
+;(function () {
+  var each = Array.prototype.forEach
+  var autoplayIds = []
+
+  document.addEventListener('turbolinks:before-cache', function () {
+    var autoplayElements = document.querySelectorAll('[autoplay]')
+    each.call(autoplayElements, function (element) {
+      if (!element.id) throw 'autoplay elements need an ID attribute'
+      autoplayIds.push(element.id)
+      element.removeAttribute('autoplay')
     })
+  })
 
-    document.addEventListener('turbolinks:before-render', function (event) {
-      autoplayIds = autoplayIds.reduce(function (ids, id) {
-        var autoplay = event.data.newBody.querySelector('#' + id)
-        if (autoplay) autoplay.setAttribute('autoplay', true)
-        else ids.push(id)
-        return ids
-      }, [])
-    })
-  })()
+  document.addEventListener('turbolinks:before-render', function (event) {
+    autoplayIds = autoplayIds.reduce(function (ids, id) {
+      var autoplay = event.data.newBody.querySelector('#' + id)
+      if (autoplay) autoplay.setAttribute('autoplay', true)
+      else ids.push(id)
+      return ids
+    }, [])
+  })
+})()
 </script>
