@@ -1,0 +1,45 @@
+
+
+@media screen and (max-width: 820px), screen and (width: 820px), screen and (display-mode: browser) and (max-width: 820px) {
+  body {
+    margin: 0;
+    overflow: hidden scroll;
+  }
+  div.navbar {
+    height: 35px!important;
+  }
+  .video {
+    width: 200%!important;
+    right: -55%;
+    top: 10%!important;
+    transform: rotate(90deg);
+  }
+
+  div.logo_bc {
+    position: fixed!important;
+    top: 10px!important;
+    left: 10px!important;
+  }
+
+  .fas {
+    animation: none!important;
+  }
+  .fa-apple-alt {
+    display: none!important;
+  }
+  .fa-frog {
+    position: relative!important;
+    font-size: 200%!important; 
+    top: 53px!important;
+    right: 5px;
+  }
+  .fa-concierge-bell {
+    font-size: 150%!important;
+    top: 55px!important;
+  }
+  .fa-crown {
+    top: 28px!important;
+    right: 40px!important;
+    font-size: 100%!important; 
+  }
+}
