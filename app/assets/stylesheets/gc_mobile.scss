@@ -17,12 +17,12 @@
   }
 
   div.navbar {
-    height: 35px!important;
+    height: 13vw!important;
     position: sticky!important;
     & p {
-    font-size:50px!important;
-    }
+    font-size: 14vh!important;
   }
+}
 
   .video {
     width: 200%!important;
@@ -33,8 +33,8 @@
 
   div.logo_bc {
     position: fixed!important;
-    top: 10px!important;
-    left: 10px!important;
+    top: 8vw!important;
+    left: 2vw!important;
   }
 
   .fas {
