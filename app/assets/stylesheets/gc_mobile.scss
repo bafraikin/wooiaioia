@@ -1,6 +1,6 @@
 
-
 @media screen and (max-width: 820px), screen and (width: 820px), screen and (display-mode: browser) and (max-width: 820px) {
+  
   html {
     overflow-x: hidden;
   }
@@ -10,9 +10,11 @@
     margin: 0;
     overflow: hidden!important scroll!important;
   }
+
   div.navbar {
     height: 35px!important;
   }
+
   .video {
     width: 200%!important;
     right: -55%;
@@ -29,19 +31,23 @@
   .fas {
     animation: none!important;
   }
+
   .fa-apple-alt {
     display: none!important;
   }
+
   .fa-frog {
     position: relative!important;
     font-size: 200%!important; 
     top: 53px!important;
     right: 5px;
   }
+
   .fa-concierge-bell {
     font-size: 150%!important;
     top: 55px!important;
   }
+
   .fa-crown {
     top: 28px!important;
     right: 40px!important;
