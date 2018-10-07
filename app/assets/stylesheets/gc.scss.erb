@@ -4,15 +4,24 @@
 *= require aos
 */
 
+@font-face {
+  font-family: 'brook-script';
+  src:url('<%= font_path "brook-script.ttf" %>') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   overflow: hidden scroll;
 }
 
 div.navbar {
+
+  font-family: 'brook-script';
   position: sticky;
   top: 0px;
-  background-color: red;
+  background-color: #ffa500;
   height: 40px;
   width: 100%;
   z-index: 20;
