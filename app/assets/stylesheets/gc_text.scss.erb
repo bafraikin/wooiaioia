@@ -18,21 +18,23 @@ height: 60px;
 }
 
 div.carrot {
-z-index: -1;
+  z-index: -1;
 }
 
-img.carrot_right {
-  transform: rotate(93deg);
-  width: 60%;
-  margin: 0 15% 0 25%;
+div.carrot.carrot_right::before {
+  content: "";
+  background: url("<%= image_path 'carrot.png' %>") no-repeat center center;
+  transform: rotate(104deg);
+  position: fixed;
   -webkit-filter: brightness(1.8);
   filter: brightness(1.8); 
 }
 
-img.carrot_left {
-  transform: rotate(-93deg);
-  width: 60%;
-  margin: 0 25% 0 15%;
+div.carrot.carrot_left::before {
+  content: "";
+  background: url("<%= image_path 'carrot.png' %>") no-repeat center center;
+  transform: rotate(-104deg);
+  position: fixed;
   -webkit-filter: brightness(1.8);
   filter: brightness(1.8); 
 }
