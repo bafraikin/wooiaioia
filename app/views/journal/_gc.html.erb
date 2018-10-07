@@ -20,12 +20,16 @@
 </div>
 <% 10.times do |index| %>
   <% if index.even?%>
-    <div class="carrot" data-aos= "fade-up-left" data-aos-duration="3000">
-      <%= image_tag "carrot.png", class: "carrot_right" %> 
+    <div class="carrot carrot_right" data-aos= "fade-up-left" data-aos-duration="3000">
+      <h1>titre ultra long du cul parcequ'on aime ça</h1>
+      <p>description/1ere phrase du text coupé au bout d'un moment parcequ'on aime ça</p>
+      <p>date 10/10/10</p>
     </div>
   <% else %>
-    <div class="carrot" data-aos= "fade-up-right" data-aos-duration="3000">
-      <%= image_tag "carrot.png", class: "carrot_left" %> 
+    <div class="carrot carrot_left" data-aos= "fade-up-right" data-aos-duration="3000">
+      <h1>titre ultra long du cul parcequ'on aime ça</h1>
+      <p>description/1ere phrase du text coupé au bout d'un moment parcequ'on aime ça</p>
+      <p>date 10/10/10</p>
     </div>
   <% end %>
 <% end %>
