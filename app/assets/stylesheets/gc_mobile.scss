@@ -1,7 +1,12 @@
 
 
 @media screen and (max-width: 820px), screen and (width: 820px), screen and (display-mode: browser) and (max-width: 820px) {
+  html {
+    overflow-x: hidden;
+  }
+
   body {
+    position: relative;
     margin: 0;
     overflow: hidden!important scroll!important;
   }
@@ -49,6 +54,7 @@
     left: -10%;
     margin: 0 10% 0 5%;
   }
+
   img.carrot_right {
     width: 85%;
     position: relative;
