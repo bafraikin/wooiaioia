@@ -5,6 +5,7 @@
  //   overflow-x: hidden;
   }
 
+
   body {
     position: relative;
     margin: 0;
@@ -18,6 +19,9 @@
   div.navbar {
     height: 35px!important;
     position: sticky!important;
+    & p {
+    font-size:500px!important;
+    }
   }
 
   .video {
