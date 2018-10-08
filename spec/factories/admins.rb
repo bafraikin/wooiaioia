@@ -16,6 +16,5 @@ FactoryBot.define do
   factory :admin do
     email {Faker::Internet.email}
     password {Faker::Internet.password}
-    provider {"email"}
   end
 end
