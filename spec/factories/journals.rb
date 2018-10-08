@@ -16,7 +16,7 @@ FactoryBot.define do
 
     trait(:with_article) do 
       after(:create) do |journal|
-        create_list(:article, Random.rand(1..4), journal: journal.id)
+        create_list(:article, Random.rand(1..4), journal: journal)
       end
     end
   end
