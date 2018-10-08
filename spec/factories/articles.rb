@@ -15,7 +15,8 @@
 FactoryBot.define do
   factory :article do
     journal { create(:journal) }
-    title {Faker::Hacker.say_something_smart.first(50)}
+    name {Faker::Hacker.say_something_smart.first(50)}
     description {Faker::Matz.quote.first(300)}
+    body {Faker::Matz.quote.first(300)}
   end
 end
