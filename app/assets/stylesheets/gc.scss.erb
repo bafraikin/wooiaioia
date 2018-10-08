@@ -4,6 +4,35 @@
 *= require aos
 */
 
+
+@font-face {
+  font-family: 'champagne';
+  src: url('<%= font_path "CL.ttf" %>') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'champagne';
+  src: url('<%= font_path "CLbold.ttf" %>') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'champagne';
+  src: url('<%= font_path "CLitalic.ttf" %>') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'champagne';
+  src: url('<%= font_path "CLbolditalic.ttf" %>') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
 @font-face {
   font-family: 'brook-script';
   src:url('<%= font_path "brook-script.ttf" %>') format('truetype');
@@ -26,7 +55,7 @@
 }
 @font-face {
   font-family: 'audrey';
-  src:url('<%= font_path "Audrey-BoldOblique.otf" %>') format('truetype');
+  src:url('<%= font_path "Audrey-Bold.otf" %>') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -35,14 +64,14 @@
   font-family: 'audrey';
   src:url('<%= font_path "Audrey-Bold.otf" %>') format('truetype');
   font-weight: bold;
-  font-style: oblique;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'audrey';
   src:url('<%= font_path "Audrey-MediumBold.otf" %>') format('truetype');
   font-weight: medium;
-  font-style: oblique;
+  font-style: bold;
 }
 
 @font-face {
@@ -70,13 +99,13 @@ h1 {
 
 div.navbar {
   & p {
-   font-family: 'brook-script';
-   font-size: 62px;
-   font-style: italic;
-   text-align: center;
-   margin-top: -22px;
-   text-shadow: 0 1px black;
- }
+    font-family: 'brook-script';
+    font-size: 62px;
+    font-style: italic;
+    text-align: center;
+    margin-top: -22px;
+    text-shadow: 0 1px black;
+  }
   position: sticky;
   top: 0px;
   background-color: #ffa500;
