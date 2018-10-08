@@ -11,7 +11,11 @@
 #  description :string
 #
 
-class Article < ApplicationRecord
-  serialize :body
-  belongs_to :journal
+
+FactoryBot.define do
+  factory :article do
+    journal { create(:journal) }
+    title {Faker::Hacker.say_something_smart.first(50)}
+    description {Faker::Matz.quote.first(300)}
+  end
 end

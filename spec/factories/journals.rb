@@ -9,6 +9,15 @@
 #  updated_at  :datetime         not null
 #
 
-class Journal < ApplicationRecord
-  has_many :articles, dependent: :destroy
+
+FactoryBot.define do
+  factory :journal do
+    name {Faker::Coffee.blend_name}
+
+    trait(:with_article) do 
+      after(:create) do |journal|
+        create_list(:article, Random.rand(1..4), journal: journal.id)
+      end
+    end
+  end
 end
