@@ -16,5 +16,9 @@ Rails.application.routes.draw do
   namespace :wooiaioia do
     get '/:id' => '/journal#arti', as: 'art'
   end
+
+  namespace :gc do 
+    get '/:id' => '/journal#arti', as: 'art'
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -6,7 +6,7 @@ RSpec.describe "articles/edit", type: :view do
       :name => "MyString",
       :description => "MyString",
       :body => "MyText",
-      :journal_id => 1
+      :journal_id => Journal.all.sample.id
     ))
   end
 

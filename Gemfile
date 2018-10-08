@@ -15,8 +15,6 @@ gem 'faker'
 gem 'bootsnap'
 gem 'rake'
 gem 'puma'
-gem 'sidekiq'
-gem 'headless'
 gem 'rubocop'
 gem 'sass-rails'
 gem 'uglifier'
@@ -53,6 +51,8 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'rspec_in_context'
+  gem 'nyan-cat-formatter'
   gem 'poltergeist'
   gem 'shoulda-matchers'
 end
