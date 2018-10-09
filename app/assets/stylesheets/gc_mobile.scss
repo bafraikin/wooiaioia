@@ -34,7 +34,12 @@
     & p {
       padding-left: 3vw;
     }
+    & h1 {
+    left: 2vw;
+    }
   }
+
+
 
   div.carrot_right {
     text-align: right;
@@ -42,15 +47,39 @@
     & p {
       padding-right: 3vw;
     }
+    & p.desc {
+      padding-left: 21vw;
+    }
+    & h1 {
+      left: 12vw;
+    }
   }
 
   div.carrot {
-    font-size: 3vw;
+    font-size: 2.5vw;
     position: relative;
     padding-top: 29vw;
     & h1, & p{
       position: relative;
       top: 8vw;
+    }
+    & h1 {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 83%;
+      white-space: nowrap;
+    }
+    & p {
+      text-shadow: 0 0.2px black;
+    }
+   & p.desc {
+     width: 71%;
+     font-size: 5vw;
+     top: 5vw;
+    }
+    & p.date {
+    font-size: 4vw;
+    top: 3vw;
     }
   }
 
