@@ -1,35 +1,36 @@
 
 @media screen and (max-width: 820px), screen and (width: 820px), screen and (display-mode: browser) and (max-width: 820px) {
-body {
-  margin: 0;
-  overflow: hidden scroll;
-}
+  body {
+    margin: 0;
+    overflow: hidden scroll;
+  }
 
-h1 {
-font-size: 16vw;
-line-height: 30px;
-}
-header {
-width: 100vw!important;
-background-size: 100% auto!important;
-background-position: unset!important;
-margin: unset!important;
-margin-top: 22vw!important;
-padding: unset!important;
-}
-header::before, header::after {
-  width: 100vw!important;
-}
-header::before {
-background-size: 280px auto, 100% auto;
-}
-header::after {
-background-size: 100% auto;
-}
+  h1 {
+    font-size: 16vw;
+    line-height: 30px;
+  }
+  header {
+    width: 100vw!important;
+    background-size: 100% auto!important;
+    background-position: unset!important;
+    margin: unset!important;
+    margin-top: 22vw!important;
+    padding: unset!important;
+  }
+  header::before, header::after {
+    width: 100vw!important;
+  }
+  header::before {
+    background-size: 280px auto, 100% auto;
+  }
+  header::after {
+    background-size: 100% auto;
+  }
 
 
-.article {
-  margin: unset!important;
-  padding-bottom: 5vh!important;
-  margin-bottom: 5vh!important;
+  .article {
+    margin: unset!important;
+    padding-bottom: 5vh!important;
+    margin-bottom: 5vh!important;
+  }
 }
