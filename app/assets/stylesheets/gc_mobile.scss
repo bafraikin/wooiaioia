@@ -2,84 +2,82 @@
 @media screen and (max-width: 820px), screen and (width: 820px), screen and (display-mode: browser) and (max-width: 820px) {
 
   body {
-    position: relative;
-    margin: 0;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    position: relative!important;
+    margin: 0!important;
+    width: 100%!important;
+    -webkit-box-sizing: border-box!important;
+    -moz-box-sizing: border-box!important;
+    box-sizing: border-box!important;
   }
 
   div.carrot::before {
     background-size: 135vw!important;
-    width: 100%;
-    position: fixed;
-    z-index: -10;
-    display: block;
-    height: 150vw;
-    top: -16vw;
+    width: 100%!important;
+    position: fixed!important;
+    z-index: -10!important;
+    display: block!important;
+    height: 150vw!important;
+    top: -16vw!important;
   }
 
   div.carrot.carrot_right::before {
-    right: -19vw;
+    right: -19vw!important;
   }
 
   div.carrot.carrot_left::before {
-    right: 19vw;
+    right: 19vw!important;
   }
 
   div.carrot_left {
-    text-align: left;
-    padding-left: 17vw;
+    text-align: left!important;
+    padding-left: 17vw!important;
     & p {
-      padding-left: 3vw;
+      padding-left: 3vw!important;
     }
     & h1 {
-    left: 2vw;
+    left: 2vw!important;
     }
   }
 
-
-
   div.carrot_right {
-    text-align: right;
-    padding-right: 17vw;
+    text-align: right!important;
+    padding-right: 17vw!important;
     & p {
-      padding-right: 3vw;
+      padding-right: 3vw!important;
     }
     & p.desc {
-      padding-left: 21vw;
+      padding-left: 21vw!important;
     }
     & h1 {
-      left: 12vw;
+      left: 12vw!important;
     }
   }
 
   div.carrot {
-    font-size: 2.5vw;
-    position: relative;
-    padding-top: 29vw;
+    font-size: 2.5vw!important;
+    position: relative!important;
+    padding-top: 29vw!important;
     & h1, & p{
-      position: relative;
-      top: 8vw;
+      position: relative!important;
+      top: 8vw!important;
     }
     & h1 {
-      text-overflow: ellipsis;
-      overflow: hidden;
-      width: 83%;
-      white-space: nowrap;
+      text-overflow: ellipsis!important;
+      overflow: hidden!important;
+      width: 83%!important;
+      white-space: nowrap!important;
     }
     & p {
-      text-shadow: 0 0.2px black;
+      text-shadow: 0 0.2px black!important;
     }
    & p.desc {
-     width: 71%;
-     font-size: 5vw;
-     top: 5vw;
+     width: 71%!important;
+     font-size: 5vw!important;
+     top: 5vw!important;
     }
     & p.date {
-    font-size: 4vw;
-    top: 3vw;
+    font-size: 4vw!important;
+    top: 3vw!important;
     }
   }
 
@@ -93,9 +91,9 @@
 
   .video {
     width: 200%!important;
-    right: -55%;
+    right: -55%!important;
     top: 10%!important;
-    transform: rotate(90deg);
+    transform: rotate(90deg)!important;
   }
 
   div.logo_bc {
@@ -116,7 +114,7 @@
     position: relative!important;
     font-size: 200%!important; 
     top: 53px!important;
-    right: 5px;
+    right: 5px!important;
   }
 
   .fa-concierge-bell {
@@ -131,16 +129,16 @@
   }
 
   img.carrot_left {
-    width: 85%;
-    position: relative;
-    left: -10%;
-    margin: 0 10% 0 5%;
+    width: 85%!important;
+    position: relative!important;
+    left: -10%!important;
+    margin: 0 10% 0 5%!important;
   }
 
   img.carrot_right {
-    width: 85%;
-    position: relative;
-    left: 10%;
-    margin: 0 10% 0 5%;
+    width: 85%!important;
+    position: relative!important;
+    left: 10%!important;
+    margin: 0 10% 0 5%!important;
   }
 }
